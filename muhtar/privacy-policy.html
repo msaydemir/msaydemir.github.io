@@ -15,7 +15,7 @@
 <body>
 
 <h1>Muhtar – Gizlilik Politikası</h1>
-<p class="meta">Son güncelleme: 17 Kasım 2026 · Geliştirici: bireysel geliştirici · İletişim: <strong>msaidaydemir@gmail.com</strong></p>
+<p class="meta">Son güncelleme: 18 Kasım 2026 · Geliştirici: bireysel geliştirici · İletişim: <strong>msaidaydemir@gmail.com</strong></p>
 <p>Muhtar, gerçek harita üzerinde oynanan bir mahalle kapma oyunudur. Bu politika hangi verilerin işlendiğini açıklar. Kısaca: <strong>e-posta veya telefon istenmez, tam konumun hiçbir zaman saklanmaz; yalnızca hangi mahallede (altıgen bölgede) olduğun işlenir.</strong></p>
 
 <h2>1. Konum</h2>
@@ -28,7 +28,8 @@
 </ul>
 
 <h2>3. Oyun verileri</h2>
-<p>Her bulmaca denemesi için şunlar sunucuda saklanır: anonim kimliğin, mahalle kimliği, tarih, süre, gördüğün varyant numarası ve dokunuş zamanlamaları (hile kontrolü için). Mahalle muhtarlıkları ve sezon sıralaması herkese açıktır (rumuz + avatar + mahalle sayısı).</p>
+<p>Her bulmaca denemesi için şunlar sunucuda saklanır: anonim kimliğin, oynadığın mahallenin kimliği, o sırada bulunduğun mahallenin kimliği (yalnızca altıgen, koordinat değil), tarih, süre, gördüğün varyant numarası ve dokunuş zamanlamaları (hile kontrolü için). <strong>Deneme kayıtları 30 gün sonra, ziyaret kayıtları 72 saat sonra otomatik silinir.</strong> Mahalle muhtarlıkları ve sezon sıralaması herkese açıktır (rumuz + avatar + mahalle sayısı).</p>
+<p>Rumuzun ve avatarın, tuttuğun mahallelerde ve sezon sıralamasında yakındaki oyunculara görünür. Rumuzlar uygunsuz kelime ve iletişim bilgisi için filtrelenir; her oyuncu, mahalle kartındaki "Bildir" düğmesiyle bir rumuzu veya avatarı bildirebilir. Bildirimler (bildiren ve bildirilen anonim kimlik, mahalle, neden, tarih) inceleme için saklanır ve haklı bulunursa rumuz sıfırlanır veya hesap kapatılır.</p>
 
 <h2>4. Sunucu</h2>
 <p>Oyun verileri Supabase altyapısında (PostgreSQL, anonim kimlik doğrulama) tutulur. Uygulama sunucu yapılandırılmadan çalıştırılırsa "yerel deneme modu" devreye girer ve hiçbir veri cihazdan çıkmaz. Supabase'in gizlilik uygulamaları: <a href="https://supabase.com/privacy">supabase.com/privacy</a>. Harita karoları OpenFreeMap'ten (OpenStreetMap verisi) yüklenir; karo isteği, görüntülediğin harita bölgesini içerir ve normal bir web isteği gibi işlenir.</p>
@@ -44,13 +45,13 @@
 <p>Uygulama 13 yaş ve üzeri içindir. Çocuklardan bilerek kişisel veri toplanmaz.</p>
 
 <h2>7. Haklarınız ve veri silme</h2>
-<p>Cihazdaki veriler uygulamayı silerek kaldırılır. Sunucudaki kayıtların (anonim kimlik, rumuz, denemeler, ziyaret edilen mahalleler) silinmesini istiyorsan rumuzunu belirterek aşağıdaki adrese yaz; 30 gün içinde silinir. KVKK ve GDPR kapsamındaki erişim, düzeltme ve silme taleplerin için aynı adres geçerlidir.</p>
+<p>Cihazdaki veriler uygulamayı silerek kaldırılır. Sunucudaki kayıtların (anonim kimlik, rumuz, denemeler, ziyaret edilen mahalleler, bildirimler) silinmesini istiyorsan <strong>Ayarlar › Hakkında</strong> ekranında gösterilen kimlik kodunu belirterek aşağıdaki adrese yaz; 30 gün içinde silinir. Rumuzlar benzersiz olmadığı için yalnızca rumuzla yapılan talepler eşleştirilemez. KVKK ve GDPR kapsamındaki erişim, düzeltme ve silme taleplerin için aynı adres geçerlidir.</p>
 
 <h2>8. Değişiklikler ve iletişim</h2>
 <p>Politika güncellendiğinde yeni sürüm bu sayfada yayımlanır. E-posta: <strong>msaidaydemir@gmail.com</strong></p>
 <hr />
 <h1 id="en">Muhtar – Privacy Policy</h1>
-<p class="meta">Last updated: November 17, 2026 · Developer: individual developer · Contact: <strong>msaidaydemir@gmail.com</strong></p>
+<p class="meta">Last updated: November 18, 2026 · Developer: individual developer · Contact: <strong>msaidaydemir@gmail.com</strong></p>
 <p>Muhtar is a neighbourhood-capture game played on the real map. In short: <strong>no e-mail or phone number is required, your precise location is never stored; only which neighbourhood (hex block) you are in is processed.</strong></p>
 
 <h2>1. Location</h2>
@@ -63,7 +64,8 @@
 </ul>
 
 <h2>3. Game data</h2>
-<p>For each puzzle attempt the server stores: your anonymous id, the block id, the date, your time, the variant you saw and tap timings (for cheat detection). Block chiefs and the season leaderboard are public (nickname + avatar + block count).</p>
+<p>For each puzzle attempt the server stores: your anonymous id, the id of the block you played, the id of the block you were in at the time (hex only, never coordinates), the date, your time, the variant you saw and tap timings (for cheat detection). <strong>Attempt records are deleted automatically after 30 days, visit records after 72 hours.</strong> Block chiefs and the season leaderboard are public (nickname + avatar + block count).</p>
+<p>Your nickname and avatar are visible to nearby players on the blocks you hold and on the season leaderboard. Nicknames are filtered for offensive words and contact details; any player can report a nickname or avatar with the "Bildir" (Report) button on a block's sheet. Reports (reporter and reported anonymous ids, block, reason, date) are kept for review; upheld reports lead to a nickname reset or account closure.</p>
 
 <h2>4. Server</h2>
 <p>Game data is hosted on Supabase (PostgreSQL, anonymous auth). If the app runs without a configured server it enters a "local trial mode" and no data leaves the device. Supabase privacy: <a href="https://supabase.com/privacy">supabase.com/privacy</a>. Map tiles come from OpenFreeMap (OpenStreetMap data); a tile request contains the map area you are viewing and is handled like any web request.</p>
@@ -79,7 +81,7 @@
 <p>The app is intended for ages 13 and up. No personal data is knowingly collected from children.</p>
 
 <h2>7. Your rights and data deletion</h2>
-<p>On-device data is removed by uninstalling. To delete your server records (anonymous id, nickname, attempts, visited blocks), e-mail the address below with your nickname; deletion within 30 days. The same address serves GDPR/KVKK access, correction and deletion requests.</p>
+<p>On-device data is removed by uninstalling. To delete your server records (anonymous id, nickname, attempts, visited blocks, reports), e-mail the address below quoting the <strong>identity code shown in Settings › About (Ayarlar › Hakkında)</strong>; deletion within 30 days. Nicknames are not unique, so a request that names only a nickname cannot be matched. The same address serves GDPR/KVKK access, correction and deletion requests.</p>
 
 <h2>8. Changes and contact</h2>
 <p>Updates are published on this page. E-mail: <strong>msaidaydemir@gmail.com</strong></p>
