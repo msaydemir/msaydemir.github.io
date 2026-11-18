@@ -26,11 +26,12 @@ Tarih: 4 Kasım 2026. Bu dosya, bulutta yapılan işin durumunu ve yerel bir Cla
 | color-gobbler | Renkli Obur (renk eşleştirme koşu) | Oyunun tamamı (PR #1 birleşti) | #2: aynı içerik |
 | draw-bridge | Köprü Çiz (fizik bulmacası, 12 seviye) | Oyunun tamamı (PR #1 birleşti) | #2: aynı içerik |
 | bubble-pop | Balon Patlat ASMR (3 modlu oyuncak) | Oyunun tamamı (PR #1 birleşti) | #2: aynı içerik |
+| muhtar | Muhtar (konum tabanlı günlük bulmaca, H3 altıgen harita, Supabase) | Prototip v0.1 | #1 (taslak): tüm proje |
 | msaydemir.github.io | Gizlilik politikaları + rehberler | Yayında: https://msaydemir.github.io/ | — |
 
 PR #2'ler birleştirilmeyi bekliyor (sahibin onayı gerekir). Dal adı hepsinde `ccr-2bced9ff-2vu1ud`.
 
-Paket kimlikleri: `com.msaydemir.starmatch`, `.mergepets`, `.colorgobbler`, `.drawbridge`, `.bubblepop`. Mağazaya yüklendikten sonra değişmez.
+Paket kimlikleri: `com.msaydemir.starmatch`, `.mergepets`, `.colorgobbler`, `.drawbridge`, `.bubblepop`, `.muhtar`. Mağazaya yüklendikten sonra değişmez.
 
 ## Hesap durumu
 
@@ -52,6 +53,7 @@ Paket kimlikleri: `com.msaydemir.starmatch`, `.mergepets`, `.colorgobbler`, `.dr
 5. **Apple Developer**: kayıt, Team ID ve API anahtarı; `eas.json` submit alanları.
 6. **Production build + submit** (HESAP_KURULUM.md §4).
 7. Sonraki sürümde: AdMob entegrasyonu, Star Match için Firebase çevrimiçi mod testi.
+8. **Muhtar** (repo `muhtar`, PR #1): Supabase projesi aç ve `supabase/README.md` adımlarını uygula (anon key'i `src/backend/config.ts`'e yaz); `eas build --profile preview` ile cihazda konum + harita testi (Expo Go çalışmaz); İstanbul'da 10–20 kişiyle 2 haftalık test. v0.2 listesi `docs/RELEASE_CHECKLIST.md` §5'te (rumuz filtresi, hesap silme, sahte GPS önlemi, bildirimler).
 
 ## Bilinen teknik notlar
 
