@@ -1,0 +1,22 @@
+{
+ "v": 1,
+ "tileDeg": 0.5,
+ "idPrefix": "o:",
+ "source": "Overture Maps 2026-11-18.0 (divisions, derived from OpenStreetMap)",
+ "license": "ODbL — © OpenStreetMap contributors, © Overture Maps Foundation",
+ "attribution": "Sınırlar: © OpenStreetMap katkıcıları, Overture Maps (ODbL)",
+ "generatedAt": "2026-11-22T11:17:20Z",
+ "tiles": 91713,
+ "regions": 941307,
+ "levels": [
+  "microhood",
+  "neighborhood",
+  "macrohood",
+  "locality",
+  "localadmin",
+  "county",
+  "region",
+  "dependency",
+  "country"
+ ]
+}
