@@ -15,11 +15,11 @@
 <body>
 
 <h1>Muhtar – Gizlilik Politikası</h1>
-<p class="meta">Son güncelleme: 18 Kasım 2026 · Geliştirici: bireysel geliştirici · İletişim: <strong>msaidaydemir@gmail.com</strong></p>
+<p class="meta">Son güncelleme: 22 Kasım 2026 · Geliştirici: bireysel geliştirici · İletişim: <strong>msaidaydemir@gmail.com</strong></p>
 <p>Muhtar, gerçek harita üzerinde oynanan bir mahalle kapma oyunudur. Bu politika hangi verilerin işlendiğini açıklar. Kısaca: <strong>e-posta veya telefon istenmez, tam konumun hiçbir zaman saklanmaz; yalnızca hangi mahallede (bölgede) olduğun işlenir.</strong></p>
 
 <h2>1. Konum</h2>
-<p>Uygulama, bulunduğun mahalleyi bulmak için cihaz konumunu <strong>yalnızca uygulama açıkken</strong> okur. Okunan koordinat anında, içinde bulunduğun mahallenin (ya da mahalle verisi olmayan yerlerde köy/belde/ilçe gibi en ince gerçek idari bölgenin) kimliğine dönüştürülür; koordinatın kendisi ne cihazda ne sunucuda saklanır, hiçbir yere gönderilmez. Sınır verisi OpenStreetMap/Overture Maps kaynaklıdır ve cihaz, bulunduğun bölgenin sınır dosyasını (yaklaşık 50 km'lik bir karoyu) herkese açık statik bir adresten indirir; bu indirme isteği koordinat içermez. Sunucuya giden tek konum bilgisi bu bölge kimliğidir ve "bir mahalleyi almak için orada olma" kuralını uygulamak ve son 72 saatte bulunduğun mahalleleri hatırlamak için kullanılır. Konum izni vermezsen oyun yine açılır; sadece yeni mahalle alamazsın, tuttuğun mahalleleri savunabilirsin.</p>
+<p>Uygulama, bulunduğun mahalleyi bulmak için cihaz konumunu <strong>yalnızca uygulama açıkken</strong> okur. Okunan koordinat anında, içinde bulunduğun mahallenin (ya da mahalle verisi olmayan yerlerde köy/belde/ilçe gibi en ince gerçek idari bölgenin) kimliğine dönüştürülür; koordinatın kendisi ne cihazda ne sunucuda saklanır, hiçbir yere gönderilmez. Sınır verisi OpenStreetMap/Overture Maps kaynaklıdır ve cihaz, bulunduğun bölgenin sınır dosyalarını (yaklaşık 50 km'lik bir karo; karo sınırına yakınsan bitişik bir ila dört karo) herkese açık statik bir adresten, <strong>GitHub Pages</strong> üzerinden indirir (bkz. §4). Bu indirme isteği koordinat içermez; yalnızca karo numarasını taşır. İndirilen karolar, tekrar indirmemek için cihazda en fazla 7 gün önbellekte tutulur ve hiçbir yere gönderilmez. Sunucuya giden tek konum bilgisi bu bölge kimliğidir ve "bir mahalleyi almak için orada olma" kuralını uygulamak ve son 72 saatte bulunduğun mahalleleri hatırlamak için kullanılır. Konum izni vermezsen oyun yine açılır; sadece yeni mahalle alamazsın, tuttuğun mahalleleri savunabilirsin.</p>
 
 <h2>2. Hesap ve profil</h2>
 <ul>
@@ -32,7 +32,7 @@
 <p>Rumuzun ve avatarın, tuttuğun mahallelerde ve sezon sıralamasında yakındaki oyunculara görünür. Rumuzlar uygunsuz kelime ve iletişim bilgisi için filtrelenir; her oyuncu, mahalle kartındaki "Bildir" düğmesiyle bir rumuzu veya avatarı bildirebilir. Bildirimler (bildiren ve bildirilen anonim kimlik, mahalle, neden, tarih) inceleme için saklanır ve haklı bulunursa rumuz sıfırlanır veya hesap kapatılır.</p>
 
 <h2>4. Sunucu</h2>
-<p>Oyun verileri Supabase altyapısında (PostgreSQL, anonim kimlik doğrulama) tutulur. Uygulama sunucu yapılandırılmadan çalıştırılırsa "yerel deneme modu" devreye girer ve hiçbir veri cihazdan çıkmaz. Supabase'in gizlilik uygulamaları: <a href="https://supabase.com/privacy">supabase.com/privacy</a>. Harita karoları OpenFreeMap'ten (OpenStreetMap verisi) yüklenir; karo isteği, görüntülediğin harita bölgesini içerir ve normal bir web isteği gibi işlenir.</p>
+<p>Oyun verileri Supabase altyapısında (PostgreSQL, anonim kimlik doğrulama) tutulur. Uygulama sunucu yapılandırılmadan çalıştırılırsa "yerel deneme modu" devreye girer ve hiçbir veri cihazdan çıkmaz. Supabase'in gizlilik uygulamaları: <a href="https://supabase.com/privacy">supabase.com/privacy</a>. Harita karoları OpenFreeMap'ten (OpenStreetMap verisi) yüklenir; karo isteği, görüntülediğin harita bölgesini içerir ve normal bir web isteği gibi işlenir. Mahalle/bölge sınır dosyaları <strong>GitHub Pages</strong> üzerinden (GitHub, Inc. — bir Microsoft şirketi) statik dosya olarak sunulur; GitHub her web sunucusu gibi istek yapan IP adresini ve istenen dosya adını (yaklaşık 50 km'lik karo numarası) görebilir, koordinat veya kimlik görmez. GitHub'ın gizlilik beyanı: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">docs.github.com/site-policy/privacy-policies</a>.</p>
 
 <h2>5. Toplamadığımız veriler</h2>
 <ul>
@@ -51,11 +51,11 @@
 <p>Politika güncellendiğinde yeni sürüm bu sayfada yayımlanır. E-posta: <strong>msaidaydemir@gmail.com</strong></p>
 <hr />
 <h1 id="en">Muhtar – Privacy Policy</h1>
-<p class="meta">Last updated: November 18, 2026 · Developer: individual developer · Contact: <strong>msaidaydemir@gmail.com</strong></p>
+<p class="meta">Last updated: November 22, 2026 · Developer: individual developer · Contact: <strong>msaidaydemir@gmail.com</strong></p>
 <p>Muhtar is a neighbourhood-capture game played on the real map. In short: <strong>no e-mail or phone number is required, your precise location is never stored; only which neighbourhood (region) you are in is processed.</strong></p>
 
 <h2>1. Location</h2>
-<p>The app reads the device location <strong>only while it is open</strong> to find your current block. The coordinate is immediately converted into the id of the neighbourhood you are in (or, where no neighbourhood data exists, the finest real administrative area such as a village, town or district); the coordinate itself is neither stored on the device nor on the server, nor sent anywhere. Boundary data comes from OpenStreetMap/Overture Maps; the device downloads the boundary file for your area (a tile of roughly 50 km) from a public static address, and that request carries no coordinates. The only location data that reaches the server is this region id, used to enforce the "be there to claim it" rule and to remember the blocks you visited in the last 72 hours. Without location permission the game still opens; you just cannot claim new blocks, only defend the ones you hold.</p>
+<p>The app reads the device location <strong>only while it is open</strong> to find your current block. The coordinate is immediately converted into the id of the neighbourhood you are in (or, where no neighbourhood data exists, the finest real administrative area such as a village, town or district); the coordinate itself is neither stored on the device nor on the server, nor sent anywhere. Boundary data comes from OpenStreetMap/Overture Maps; the device downloads the boundary files for your area (a tile of roughly 50 km, or one to four adjacent tiles when you are near a tile edge) from a public static address served by <strong>GitHub Pages</strong> (see §4). That request carries no coordinates, only the tile number. Downloaded tiles are kept in an on-device cache for at most 7 days so they are not fetched again, and are never sent anywhere. The only location data that reaches the server is this region id, used to enforce the "be there to claim it" rule and to remember the blocks you visited in the last 72 hours. Without location permission the game still opens; you just cannot claim new blocks, only defend the ones you hold.</p>
 
 <h2>2. Account and profile</h2>
 <ul>
@@ -68,7 +68,7 @@
 <p>Your nickname and avatar are visible to nearby players on the blocks you hold and on the season leaderboard. Nicknames are filtered for offensive words and contact details; any player can report a nickname or avatar with the "Bildir" (Report) button on a block's sheet. Reports (reporter and reported anonymous ids, block, reason, date) are kept for review; upheld reports lead to a nickname reset or account closure.</p>
 
 <h2>4. Server</h2>
-<p>Game data is hosted on Supabase (PostgreSQL, anonymous auth). If the app runs without a configured server it enters a "local trial mode" and no data leaves the device. Supabase privacy: <a href="https://supabase.com/privacy">supabase.com/privacy</a>. Map tiles come from OpenFreeMap (OpenStreetMap data); a tile request contains the map area you are viewing and is handled like any web request.</p>
+<p>Game data is hosted on Supabase (PostgreSQL, anonymous auth). If the app runs without a configured server it enters a "local trial mode" and no data leaves the device. Supabase privacy: <a href="https://supabase.com/privacy">supabase.com/privacy</a>. Map tiles come from OpenFreeMap (OpenStreetMap data); a tile request contains the map area you are viewing and is handled like any web request. Neighbourhood boundary files are served as static files by <strong>GitHub Pages</strong> (GitHub, Inc., a Microsoft company); like any web server, GitHub can see the requesting IP address and the requested file name (a tile number covering roughly 50 km), but no coordinates and no identity. GitHub's privacy statement: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">docs.github.com/site-policy/privacy-policies</a>.</p>
 
 <h2>5. Data we do not collect</h2>
 <ul>
