@@ -16,10 +16,10 @@
 
 <h1>Muhtar – Gizlilik Politikası</h1>
 <p class="meta">Son güncelleme: 18 Kasım 2026 · Geliştirici: bireysel geliştirici · İletişim: <strong>msaidaydemir@gmail.com</strong></p>
-<p>Muhtar, gerçek harita üzerinde oynanan bir mahalle kapma oyunudur. Bu politika hangi verilerin işlendiğini açıklar. Kısaca: <strong>e-posta veya telefon istenmez, tam konumun hiçbir zaman saklanmaz; yalnızca hangi mahallede (altıgen bölgede) olduğun işlenir.</strong></p>
+<p>Muhtar, gerçek harita üzerinde oynanan bir mahalle kapma oyunudur. Bu politika hangi verilerin işlendiğini açıklar. Kısaca: <strong>e-posta veya telefon istenmez, tam konumun hiçbir zaman saklanmaz; yalnızca hangi mahallede (bölgede) olduğun işlenir.</strong></p>
 
 <h2>1. Konum</h2>
-<p>Uygulama, bulunduğun mahalleyi bulmak için cihaz konumunu <strong>yalnızca uygulama açıkken</strong> okur. Okunan koordinat anında yaklaşık 0,7 km²'lik bir altıgen bölge kimliğine (H3 hücresi) dönüştürülür; koordinatın kendisi ne cihazda ne sunucuda saklanır, hiçbir yere gönderilmez. Sunucuya giden tek konum bilgisi bu altıgen kimliğidir ve "bir mahalleyi almak için orada olma" kuralını uygulamak ve son 72 saatte bulunduğun mahalleleri hatırlamak için kullanılır. Konum izni vermezsen oyun yine açılır; sadece yeni mahalle alamazsın, tuttuğun mahalleleri savunabilirsin.</p>
+<p>Uygulama, bulunduğun mahalleyi bulmak için cihaz konumunu <strong>yalnızca uygulama açıkken</strong> okur. Okunan koordinat anında, içinde bulunduğun mahallenin (ya da mahalle verisi olmayan yerlerde köy/belde/ilçe gibi en ince gerçek idari bölgenin) kimliğine dönüştürülür; koordinatın kendisi ne cihazda ne sunucuda saklanır, hiçbir yere gönderilmez. Sınır verisi OpenStreetMap/Overture Maps kaynaklıdır ve cihaz, bulunduğun bölgenin sınır dosyasını (yaklaşık 50 km'lik bir karoyu) herkese açık statik bir adresten indirir; bu indirme isteği koordinat içermez. Sunucuya giden tek konum bilgisi bu bölge kimliğidir ve "bir mahalleyi almak için orada olma" kuralını uygulamak ve son 72 saatte bulunduğun mahalleleri hatırlamak için kullanılır. Konum izni vermezsen oyun yine açılır; sadece yeni mahalle alamazsın, tuttuğun mahalleleri savunabilirsin.</p>
 
 <h2>2. Hesap ve profil</h2>
 <ul>
@@ -28,7 +28,7 @@
 </ul>
 
 <h2>3. Oyun verileri</h2>
-<p>Her bulmaca denemesi için şunlar sunucuda saklanır: anonim kimliğin, oynadığın mahallenin kimliği, o sırada bulunduğun mahallenin kimliği (yalnızca altıgen, koordinat değil), tarih, süre, gördüğün varyant numarası ve dokunuş zamanlamaları (hile kontrolü için). <strong>Deneme kayıtları 30 gün sonra, ziyaret kayıtları 72 saat sonra otomatik silinir.</strong> Mahalle muhtarlıkları ve sezon sıralaması herkese açıktır (rumuz + avatar + mahalle sayısı).</p>
+<p>Her bulmaca denemesi için şunlar sunucuda saklanır: anonim kimliğin, oynadığın mahallenin kimliği, o sırada bulunduğun mahallenin kimliği (yalnızca bölge kimliği, koordinat değil), tarih, süre, gördüğün varyant numarası ve dokunuş zamanlamaları (hile kontrolü için). <strong>Deneme kayıtları 30 gün sonra, ziyaret kayıtları 72 saat sonra otomatik silinir.</strong> Mahalle muhtarlıkları ve sezon sıralaması herkese açıktır (rumuz + avatar + mahalle sayısı).</p>
 <p>Rumuzun ve avatarın, tuttuğun mahallelerde ve sezon sıralamasında yakındaki oyunculara görünür. Rumuzlar uygunsuz kelime ve iletişim bilgisi için filtrelenir; her oyuncu, mahalle kartındaki "Bildir" düğmesiyle bir rumuzu veya avatarı bildirebilir. Bildirimler (bildiren ve bildirilen anonim kimlik, mahalle, neden, tarih) inceleme için saklanır ve haklı bulunursa rumuz sıfırlanır veya hesap kapatılır.</p>
 
 <h2>4. Sunucu</h2>
@@ -52,10 +52,10 @@
 <hr />
 <h1 id="en">Muhtar – Privacy Policy</h1>
 <p class="meta">Last updated: November 18, 2026 · Developer: individual developer · Contact: <strong>msaidaydemir@gmail.com</strong></p>
-<p>Muhtar is a neighbourhood-capture game played on the real map. In short: <strong>no e-mail or phone number is required, your precise location is never stored; only which neighbourhood (hex block) you are in is processed.</strong></p>
+<p>Muhtar is a neighbourhood-capture game played on the real map. In short: <strong>no e-mail or phone number is required, your precise location is never stored; only which neighbourhood (region) you are in is processed.</strong></p>
 
 <h2>1. Location</h2>
-<p>The app reads the device location <strong>only while it is open</strong> to find your current block. The coordinate is immediately converted into a hexagonal area id of roughly 0.7 km² (an H3 cell); the coordinate itself is neither stored on the device nor on the server, nor sent anywhere. The only location data that reaches the server is this cell id, used to enforce the "be there to claim it" rule and to remember the blocks you visited in the last 72 hours. Without location permission the game still opens; you just cannot claim new blocks, only defend the ones you hold.</p>
+<p>The app reads the device location <strong>only while it is open</strong> to find your current block. The coordinate is immediately converted into the id of the neighbourhood you are in (or, where no neighbourhood data exists, the finest real administrative area such as a village, town or district); the coordinate itself is neither stored on the device nor on the server, nor sent anywhere. Boundary data comes from OpenStreetMap/Overture Maps; the device downloads the boundary file for your area (a tile of roughly 50 km) from a public static address, and that request carries no coordinates. The only location data that reaches the server is this region id, used to enforce the "be there to claim it" rule and to remember the blocks you visited in the last 72 hours. Without location permission the game still opens; you just cannot claim new blocks, only defend the ones you hold.</p>
 
 <h2>2. Account and profile</h2>
 <ul>
@@ -64,7 +64,7 @@
 </ul>
 
 <h2>3. Game data</h2>
-<p>For each puzzle attempt the server stores: your anonymous id, the id of the block you played, the id of the block you were in at the time (hex only, never coordinates), the date, your time, the variant you saw and tap timings (for cheat detection). <strong>Attempt records are deleted automatically after 30 days, visit records after 72 hours.</strong> Block chiefs and the season leaderboard are public (nickname + avatar + block count).</p>
+<p>For each puzzle attempt the server stores: your anonymous id, the id of the block you played, the id of the block you were in at the time (region id only, never coordinates), the date, your time, the variant you saw and tap timings (for cheat detection). <strong>Attempt records are deleted automatically after 30 days, visit records after 72 hours.</strong> Block chiefs and the season leaderboard are public (nickname + avatar + block count).</p>
 <p>Your nickname and avatar are visible to nearby players on the blocks you hold and on the season leaderboard. Nicknames are filtered for offensive words and contact details; any player can report a nickname or avatar with the "Bildir" (Report) button on a block's sheet. Reports (reporter and reported anonymous ids, block, reason, date) are kept for review; upheld reports lead to a nickname reset or account closure.</p>
 
 <h2>4. Server</h2>

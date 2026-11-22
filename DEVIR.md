@@ -26,7 +26,7 @@ Tarih: 4 Kasım 2026. Bu dosya, bulutta yapılan işin durumunu ve yerel bir Cla
 | color-gobbler | Renkli Obur (renk eşleştirme koşu) | Oyunun tamamı (PR #1 birleşti) | #2: aynı içerik |
 | draw-bridge | Köprü Çiz (fizik bulmacası, 12 seviye) | Oyunun tamamı (PR #1 birleşti) | #2: aynı içerik |
 | bubble-pop | Balon Patlat ASMR (3 modlu oyuncak) | Oyunun tamamı (PR #1 birleşti) | #2: aynı içerik |
-| muhtar | Muhtar (konum tabanlı günlük bulmaca, H3 altıgen harita, Supabase) | Prototip v0.1 | #1 (taslak): tüm proje |
+| muhtar | Muhtar (konum tabanlı günlük bulmaca, gerçek mahalle sınırları, Supabase; veri: `muhtar-data` deposu) | Prototip v0.2 | #1 (taslak): tüm proje |
 | msaydemir.github.io | Gizlilik politikaları + rehberler | Yayında: https://msaydemir.github.io/ | — |
 
 PR #2'ler birleştirilmeyi bekliyor (sahibin onayı gerekir). Dal adı hepsinde `ccr-2bced9ff-2vu1ud`.
