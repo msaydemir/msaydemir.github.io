@@ -53,7 +53,7 @@ Paket kimlikleri: `com.msaydemir.starmatch`, `.mergepets`, `.colorgobbler`, `.dr
 5. **Apple Developer**: kayıt, Team ID ve API anahtarı; `eas.json` submit alanları.
 6. **Production build + submit** (HESAP_KURULUM.md §4).
 7. Sonraki sürümde: AdMob entegrasyonu, Star Match için Firebase çevrimiçi mod testi.
-8. **Muhtar** (repo `muhtar`, PR #1): Supabase projesi aç ve `supabase/README.md` adımlarını uygula (anon key'i `src/backend/config.ts`'e yaz); `eas build --profile preview` ile cihazda konum + harita testi (Expo Go çalışmaz); İstanbul'da 10–20 kişiyle 2 haftalık test. v0.2 listesi `docs/RELEASE_CHECKLIST.md` §5'te (rumuz filtresi, hesap silme, sahte GPS önlemi, bildirimler).
+8. **Muhtar** (repo `muhtar`; PR #1 22 Kasım'da `main`'e birleşti, atlı akını dahil; web v0.5 `muhtar/app/` altında yayında, `main`'den `experiments.baseUrl: /muhtar/app` ile derlenir): Supabase projesi aç ve `supabase/README.md` adımlarını uygula (anon key'i `src/backend/config.ts`'e yaz); `eas build --profile preview` ile cihazda konum + harita testi (Expo Go çalışmaz); İstanbul'da 10–20 kişiyle 2 haftalık test. v0.2 listesi `docs/RELEASE_CHECKLIST.md` §5'te (rumuz filtresi, hesap silme, sahte GPS önlemi, bildirimler).
 
 ## Bilinen teknik notlar
 
